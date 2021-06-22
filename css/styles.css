@@ -5,6 +5,7 @@
   --main-text-color: #212121;
   --sub-text-color: #757575;
   --white-color: #fff;
+  --black-color: #000;
   --dark-backgraund: #2f303a;
   --light-background: #f5f4fa;
   --border-color: #ececec;
@@ -17,30 +18,30 @@ body {
   line-height: 1.14;
   color: var(--main-text-color);
   margin: 0;
-}
-button,
-a {
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
   font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-style: inherit;
 }
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-link {
-  color: var(--main-text-color);
+.page-link, .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .link {
   color: var(--sub-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+}
+.page-link {
+  color: var(--main-text-color);
 }
 .link-hover:focus,
 .link-hover:hover {
@@ -57,15 +58,12 @@ ul {
   font-weight: bold;
   letter-spacing: 0.03em;
 }
-header {
+.header {
   border-bottom: 1px solid var(--border-color);
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
   padding: 25px 0;
 }
-header .logo {
-  color: #000;
+.header-logo {
+  color: var(--black-color);
 }
 .active-page {
   color: var(--brand-color);
@@ -75,7 +73,7 @@ header .logo {
   padding: 200px 0;
   text-align: center;
 }
-h1 {
+.hero-title {
   font-size: 44px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -86,17 +84,16 @@ h1 {
   margin-bottom: 30px;
 }
 .hero-button {
-  color: var(--alt-text-color);
+  color: var(--white-color);
   font-size: 16px;
   font-family: var(--main-font);
   font-weight: 700;
   letter-spacing: 0.06em;
   border: none;
-  color: var(--white-color);
   padding: 10px 30px;
   line-height: 1.9;
   background: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .point-header {
@@ -109,7 +106,7 @@ h1 {
   color: var(--sub-text-color);
   line-height: 1.7;
 }
-h2 {
+.second-title {
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
@@ -138,9 +135,9 @@ h2 {
 .card {
   text-align: center;
   background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
   padding-bottom: 30px;
 }
 .name {
@@ -157,7 +154,7 @@ h2 {
   line-height: 1.2;
   margin: 0;
 }
-footer {
+.footer {
   padding: 60px 0;
   background-color: var(--dark-backgraund);
 }
@@ -165,13 +162,14 @@ footer {
   color: var(--white-color);
 }
 .footer-link {
+  font-style: normal;
   opacity: 0.6;
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.adress {
+.address {
   color: var(--white-color);
   opacity: 1;
 }
@@ -204,7 +202,7 @@ footer {
 .portfolio-button:focus {
   background-color: var(--brand-color);
   color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-card {
